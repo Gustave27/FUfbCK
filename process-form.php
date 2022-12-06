@@ -21,7 +21,7 @@ if (mysqli_connect_error()){
 }
 
 
-$sql = "INSERT INTO message (titel, datum, tijd, locatie, beschrijving)
+$sql = "INSERT INTO evenementen (titel, datum, tijd, locatie, beschrijving)
 VALUES (?, ?, ?, ?, ?)";
 
 $stmt = mysqli_stmt_init($conn);
