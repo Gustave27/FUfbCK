@@ -9,7 +9,7 @@ $beschrijving = $_POST["beschrijving"];
 $host = "ID375042_EVENEMENTEN.db.webhosting.be";
 $dbname = "ID375042_EVENEMENTEN";
 $username = "ID375042_EVENEMENTEN";
-$password = "";
+$password = "lolilol69!";
 
 $conn = mysqli_connect (hostname: $host, 
                         username: $username, 
