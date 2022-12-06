@@ -6,9 +6,9 @@ $tijd = $_POST["tijd"];
 $locatie = $_POST["locatie"];
 $beschrijving = $_POST["beschrijving"];
 
-$host = "localhost";
-$dbname = "evenementen";
-$username = "root";
+$host = "ID375042_EVENEMENTEN.db.webhosting.be";
+$dbname = "ID375042_EVENEMENTEN";
+$username = "ID375042_EVENEMENTEN";
 $password = "";
 
 $conn = mysqli_connect (hostname: $host, 
