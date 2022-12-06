@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>FUfbCK</title>
+</head>
+<body>
+   <h1>FUfbCK</h1> 
+
+   <form class="event-aanmaken" action="process-form.php" method="post">
+    <input type="text" id="titel" name="titel" placeholder="TITLE">
+    <input type="date" id="datum" name="datum">
+    <input type="time" id="tijd" name="tijd">
+    <input type="text" id="locatie" name="locatie" placeholder="Location">
+    <textarea class="textarea resize-ta" name="beschrijving" placeholder="Description"></textarea>
+    <input type="text" id="organisator" name="organisator" placeholder="organiser">
+    <input type="email" id="email" name="email" placeholder="e-mail">
+    <button type="submit" id="send">Send Invitation</button>
+
+
+   </form>
+
+<script>
+function calcHeight(value) {
+  let numberOfLineBreaks = (value.match(/\n/g) || []).length;
+  // min-height + lines x line-height + padding + border
+  let newHeight = 10 + numberOfLineBreaks * 30 + 20;
+  return newHeight;
+}
+
+let textarea = document.querySelector(".resize-ta");
+textarea.addEventListener("keyup", () => {
+  textarea.style.height = calcHeight(textarea.value) + "px";
+});
+</script>
+    
+</body>
+</html>
