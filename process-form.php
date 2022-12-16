@@ -8,10 +8,10 @@ $beschrijving = $_POST["beschrijving"];
 
 var_dump($titel, $datum, $tijd, $locatie, $beschrijving)
 
-/* $host = "ID375042_EVENEMENTEN.db.webhosting.be";
+$host = "ID375042_EVENEMENTEN.db.webhosting.be";
 $dbname = "ID375042_EVENEMENTEN";
 $username = "ID375042_EVENEMENTEN";
-$password = "";
+$password = "Lolilol69!";
 
 $conn = mysqli_connect (hostname: $host, 
                         username: $username, 
@@ -41,5 +41,5 @@ mysqli_stmt_bind_param($stmt, "sssss",
 
 mysqli_stmt_execute($stmt);
 
-echo "record saved"; */
+echo "record saved"; 
 
