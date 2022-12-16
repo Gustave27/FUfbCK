@@ -11,31 +11,20 @@
    <h1>FUfbCK</h1> 
 
    <form class="event-aanmaken" action="process-form.php" method="post">
-    <input type="text" id="titel" name="titel" placeholder="TITLE">
+    <input type="text" id="titel" name="titel" placeholder="TITEL">
     <input type="date" id="datum" name="datum">
     <input type="time" id="tijd" name="tijd">
-    <input type="text" id="locatie" name="locatie" placeholder="Location">
-    <textarea class="textarea resize-ta" name="beschrijving" placeholder="Description"></textarea>
-    <input type="text" id="organisator" name="organisator" placeholder="organiser">
+    <input type="text" id="locatie" name="locatie" placeholder="Locatie">
+    <textarea class="textarea resize-ta" name="beschrijving" placeholder="Beschrijving"></textarea>
+   <hr>
+    <input type="text" id="organisator" name="organisator" placeholder="organisator">
     <input type="email" id="email" name="email" placeholder="e-mail">
-    <button type="submit" id="send">Send Invitation</button>
+    <button type="submit" id="send">Uitnodiging sturen</button>
 
 
    </form>
 
-<script>
-function calcHeight(value) {
-  let numberOfLineBreaks = (value.match(/\n/g) || []).length;
-  // min-height + lines x line-height + padding + border
-  let newHeight = 10 + numberOfLineBreaks * 30 + 20;
-  return newHeight;
-}
 
-let textarea = document.querySelector(".resize-ta");
-textarea.addEventListener("keyup", () => {
-  textarea.style.height = calcHeight(textarea.value) + "px";
-});
-</script>
-    
+   <script src="beschrijving.js"></script>
 </body>
 </html>

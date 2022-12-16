@@ -16,7 +16,7 @@ $conn = mysqli_connect (hostname: $host,
                         password: $password, 
                         database: $dbname);
 
-if (mysqli_connect_error()){
+if (mysqli_connect_errno()){
     die("connection error: " . mysqli_connect_error());
 }
 
